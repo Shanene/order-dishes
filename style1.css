@@ -1,0 +1,253 @@
+    *{
+   padding:0px;
+   margin:0px;
+   font-family:"微软雅黑";
+   }
+   body{
+    background-color: #F5F5F5;
+    color: #333;
+   }
+   .container{
+    width: 1300px;
+    margin:0 auto;
+    overflow: hidden;
+   }
+   
+.ul1 li{
+  width:100%;
+  list-style:none;
+  height:40px;
+  line-height:40px;
+  border-bottom: solid 1px #ccc;
+  }
+   .order{
+  position:fixed;
+  bottom:0;
+  right:100px;
+  border:solid 1px #fff;
+  width:300px;
+  background-color: #fff;
+  border-radius: 10px 10px 0 0 ;
+  }
+  .username{
+  font-size:14px;
+  height:45px;
+  line-height: 45px;
+  background-color: #FFFDF0;
+  color:#333;
+  border-radius: 10px 10px 0 0 ;
+  behavior:url(PIE.htc);
+  }
+  .username input{
+  width:80px;
+  height:20px;
+  border:solid 1px #ccc;
+  }
+  .shopping{
+    background-color: #FAFAFA;
+    font-size: 15px;
+  }
+  .dish-number{
+    float: right;
+    clear: both;
+    width:140px;
+  }
+  .dish-name{
+    width:120px;
+    float: left;
+    clear: both;
+    font-size:15px;
+  }
+  .dish-price{
+   float: left;
+  }
+  .dish-delete{
+    float: right;
+    width:80px;
+  }
+  .dish-delete input{
+    color: #fff;
+    background-color: #00b33b;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 2px;
+    border:none;
+    width:50px;
+    height:35px;
+    font-size: 16px;
+    border:solid 1px #ccc;
+
+  }
+  .people-total{
+    height:40px;
+    line-height: 40px;
+    font-size: 14px;
+  }
+  .people{
+    width:50%;
+    float: left;
+  }
+  .people input{
+  width:20px;
+  height:20px;
+  border:solid 1px #ccc;
+  }
+  .money{
+    text-align: right;
+  }
+  #nowmoney{
+    font-size: 28px;
+    font-weight: bold;
+    color: #fe4d3d;
+  }
+  .shoppingcart{
+    height:40px;
+    background-color: #2C2C2C;
+    line-height: 50px;
+    text-align: center;
+  } 
+  .shoppingcart span{
+    float: right;
+    display: inline-block;
+    color:#333;
+    width: 100px;
+    height: 100%;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    background-color:#FFD161;
+  }
+  /*菜单*/
+   #div1{
+    margin:20px auto; 
+    width:1000px;       
+    height:120px;   
+   }
+   #div2{
+    margin:20px 180px ;
+    background-color:#fff;    
+    width:600px;        
+    height:380px;   
+    }
+    #div3{
+    margin:20px 180px ;
+    background-color:#fff;   
+    width:600px;        
+    height:380px;   
+    }
+#div4{
+margin:20px 180px ;
+background-color:#fff;     
+width:600px;        
+height:380px;   
+}
+#div5{
+margin:20px 180px ;
+background-color:#fff;   
+width:600px;        
+height:150px;   
+}
+a{text-decoration:none;color:#333;}
+.add-number{
+  opacity: 0;
+  filter:alpha(opacity=0);
+}
+.sp{
+background-color:#FFD705;
+width:15px;
+height:15px;
+line-height:15px;
+display:inline-block;
+text-align:center;
+border-radius: 5px;
+font-size: 13px;
+color:#333;
+behavior:url(PIE.htc);
+}
+
+.add{
+width:20px;
+height:20px;
+line-height:20px;
+border-radius: 50%;
+font-weight: bold;
+font-size: 16px;
+behavior:url(PIE.htc);
+cursor: pointer;
+}
+
+.div22{
+margin:-120px 300px;
+width:500px;        
+height:120px; 
+}
+.div21{
+width:500px;        
+height:120px; 
+}
+.tb1{
+width:280px;
+height:120px;
+}
+.tb1 td{
+height:30px;
+}
+#div1 img{
+width:140px;
+height:120px;
+}
+h1{
+width:500px;
+height:40px;
+margin:-120px 150px;
+font-size:50px;
+}
+.copyright{
+  width:200px;
+  margin:0 auto;
+  font-size: 12px;
+  text-align: center;
+  color:#1C0100;
+}
+p{width:500px;
+margin:160px 700px;
+font-size:30px;
+}
+.bg{
+background:url(imagess/7.png) ;
+background-size:1000px 120px;
+background-repeat:no-repeat;
+}
+#div2, #div3, #div4,#div5{
+border:1px solid #000;
+border-radius: 5px;
+behavior:url(PIE.htc);
+}
+#div2:hover, #div3:hover, #div4:hover,#div5:hover,.zdiv:hover{
+  border:solid 1px #00b33b;
+}
+.zdiv{
+margin:20px 180px ;
+background-color:#fff;
+border:1px solid #000;    
+width:580px;        
+height:180px; 
+padding: 10px;
+background-size:600px 380px;
+border-radius: 5px;  
+}
+.care{
+  font-size: 40px;
+  color:#FF8000;
+}
+.zdiv span{
+  font-size: 13px;
+}
+.print{
+   font-size: 15px;
+   width:500px;
+   height:100px;
+    overflow: hidden;
+}
+

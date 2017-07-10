@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>点餐.html</title>
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="style1.css">
+    <script src="jquery-1.8.3.js"></script>
+    <script src="mains.js"></script>
+  </head>
+  <body>
+  <div class="container">
+  <div class="order">
+  <div class="order-top">
+  <div class="username">组长姓名: <input type="text" value="" /></div>
+  <div class="username shopping">购物车  
+  <div class="dish-number">点菜数量：<span id="dish-number">0</span></div>
+  </div>
+  <ul class="ul1">
+<!-- <li><div class="dish-name">西红柿</div>
+ <div class="dish-price">￥8</div>
+ <div class="dish-delete"><input type="button" value="删除"></div></li>
+ <li><div class="dish-name">西红柿</div>
+ <div class="dish-price">￥8</div> 
+ <div class="dish-delete"><input type="button" value="删除">
+ </div></li>
+ <li><div class="dish-name">西红柿</div> 
+ <div class="dish-price">￥8</div>
+ <div class="dish-delete"><input type="button" value="删除">
+ </div></li>  -->
+</ul>
+<div class="people-total">
+<div class="people person">小组人数:<input type="text"  value="0" /></div>
+<div class="people rice">加饭数量:<input type="text" value="0" /></div>   </div>
+<div class="people-total money">
+  原价总额:￥<span id="pastmoney">0</span>&nbsp;&nbsp;
+  折后总额:<span id="nowmoney">￥00.0</span>
+</div>    
+  </div>
+  
+<div class="shoppingcart"><img src="imagess/购物车.png" width="20px" height="20px"><span>立即下单</span></div>
+  </div>
+   <div id="div1" class="bg"><img src="imagess/1.gif"/>
+  <h1>物电学院软件工作室</h1>
+  <p>欢迎您的点餐</p>
+  </div>
+ <div id="div2" >
+   <div class="div21">
+        <table  class="tb1">
+          <tr>
+            <td>菜名</td>
+            <td>价格</td>
+            <td>操作</td>
+            </tr>
+            <tr>
+            <td>麻婆豆腐</td>
+            <td>￥8</td>
+            <td>
+                <span class="sp add">+</span></td>
+            </td>
+            </tr>
+            <tr>
+            <td>火腿黄瓜</td>
+            <td>￥8</td>
+            <td>
+                <span class="sp add">+</span></td>
+            </td>
+            </tr>
+            <tr>
+            <td>酸辣土豆丝</td>
+            <td>￥8</td>
+            <td>
+                <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>青椒土豆丝</td>
+            <td>￥8</td>
+            <td>
+                <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>韭菜香干</td>
+            <td>￥8</td>
+            <td>
+                <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>芹菜香干</td>
+            <td>￥8</td>
+            <td>
+                <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>清炒苦瓜</td>
+            <td>￥8</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>清炒四季豆</td>
+            <td>￥8</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>清炒空心菜</td>
+            <td>￥8</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>油麦菜</td>
+            <td>￥8</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+                    </table>
+            </div>
+      <div class="div22">
+        <table class="tb1">
+          <tr>
+            <td>菜名</td>
+            <td>价格</td>
+            <td>操作</td>
+            </tr>
+          <tr>
+            <td>家常豆腐</td>
+            <td>￥9</td>
+            <td>
+                  <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>西红柿炒蛋</td>
+            <td>￥9</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>苦瓜炒蛋</td>
+            <td>￥9</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>茄子炒蛋</td>
+            <td>￥9</td>
+            <td>
+                  <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>青椒炒蛋</td>
+            <td>￥9</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>火腿炒蛋</td>
+            <td>￥9</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>茄子豆角</td>
+            <td>￥9</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>韭菜炒蛋</td>
+            <td>￥9</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>鱼香肉丝</td>
+            <td>￥10</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>宫保鸡丁</td>
+            <td>￥10</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+          </table>
+        </div>
+  </div>
+ <div id="div3">
+  <div class="div21">
+        <table  class="tb1">
+          <tr>
+            <td>菜名</td>
+            <td>价格</td>
+            <td>操作</td>
+            </tr>
+            <tr>
+            <td>日本豆腐</td>
+            <td>￥10</td>
+            <td>
+                    <span class="sp add">+</span>
+                    </td>
+            </tr>
+            <tr>
+            <td>鸡蛋干炒肉</td>
+            <td>￥11</td>
+            <td>
+                    <span class="sp add">+</span>
+                    </td>
+            </tr>
+            <tr>
+            <td>四季豆肉丝</td>
+            <td>￥11</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>熏干炒肉</td>
+            <td>￥11</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>脆莴苣炒肉</td>
+            <td>￥11</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>黄瓜肉丝</td>
+            <td>￥11</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>胡萝卜肉丝</td>
+            <td>￥11</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>油豆腐炒肉</td>
+            <td>￥11</td>
+            <td>
+                  <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>花菜肉丝</td>
+            <td>￥11</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>酸菜肉丝</td>
+            <td>￥11</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+                    </table>
+            </div>
+      <div class="div22">
+        <table border="0" class="tb1">
+          <tr>
+            <td>菜名</td>
+            <td>价格</td>
+            <td>操作</td>
+            </tr>
+          <tr>
+            <td>榨菜肉丝</td>
+            <td>￥11</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>洋葱肉丝蛋</td>
+            <td>￥11</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>香干肉丝</td>
+            <td>￥11</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>木耳肉丝</td>
+            <td>￥11</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>豆角肉丝</td>
+            <td>￥11</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>莴笋肉丝</td>
+            <td>￥11</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>青椒肉丝</td>
+            <td>￥11</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>蒜苗肉丝</td>
+            <td>￥11</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>酸辣鸡杂</td>
+            <td>￥11</td>
+            <td>
+                  <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>蒜苗鸡杂</td>
+            <td>￥11</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+          </table>
+        </div>
+  </div>
+ <div id="div4">
+  <div class="div21">
+        <table border="0" class="tb1">
+          <tr>
+            <td>菜名</td>
+            <td>价格</td>
+            <td>操作</td>
+            </tr>
+            <tr>
+            <td>茄子炒肉</td>
+            <td>￥11</td>
+            <td>
+                    <span class="sp add">+</span></td>
+                    </td>
+            </tr>
+            <tr>
+            <td>鱼香茄子</td>
+            <td>￥11</td>
+            <td>
+                    <span class="sp add">+</span></td>
+                    </td>
+            </tr>
+            <tr>
+            <td>黄瓜皮炒肉</td>
+            <td>￥11</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>莴笋回锅肉</td>
+            <td>￥12</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>青椒猪肝</td>
+            <td>￥12</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>香菇肉片</td>
+            <td>￥12</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>平菇肉片</td>
+            <td>￥12</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>木耳鸡丁</td>
+            <td>￥12</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>辣子鸡丁</td>
+            <td>￥12</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>红烧鱼块</td>
+            <td>￥12</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+                    </table>
+            </div>
+      <div class="div22">
+        <table border="0" class="tb1">
+          <tr>
+            <td>菜名</td>
+            <td>价格</td>
+            <td>操作</td>
+            </tr>
+          <tr>
+            <td>吊烧肉炒莴笋</td>
+            <td>￥12</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>腊肉炒莴笋</td>
+            <td>￥12</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>腊肉炒大蒜</td>
+            <td>￥12</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>回味香肠</td>
+            <td>￥12</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>香菇滑鸡</td>
+            <td>￥12</td>
+            <td>
+                  <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>青椒肥肠</td>
+            <td>￥13</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>青椒腰花</td>
+            <td>￥13</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>青椒炒顺风</td>
+            <td>￥13</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>青椒牛肉</td>
+            <td>￥15</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+            <tr>
+            <td>洋葱牛肉</td>
+            <td>￥15</td>
+            <td>
+                    <span class="sp add">+</span></td>
+            </tr>
+          </table>
+        </div>
+  </div>
+ <div id="div5">
+  <div class="div21">
+    <table border="0" class="tb1">
+      <tr>
+        <td>菜名</td>
+        <td>价格</td>
+        <td>操作</td>
+        </tr>
+        <tr>
+        <td>土豆烧鸡</td>
+        <td>￥15</td>
+        <td>
+                  <span class="sp add">+</span></td>
+        </tr>
+        <tr>
+        <td>红烧排骨</td>
+        <td>￥15</td>
+        <td>
+                  <span class="sp add">+</span></td>
+        </tr>
+        <tr>
+        <td>红烧肉</td>
+        <td>￥15</td>
+        <td>
+            <span class="sp add">+</span></td>
+        </tr>
+      </table>
+    </div>
+    <div class="div22">
+    <table  border="0" class="tb1">
+      <tr>
+        <td>菜名</td>
+        <td>价格</td>
+        <td>操作</td>
+        </tr>
+        <tr>
+        <td>孜然牛肉</td>
+        <td>￥15</td>
+        <td>
+            <span class="sp add">+</span></td>
+        </tr>
+        <tr>
+        <td>土豆牛肉</td>
+        <td>￥15</td>
+        <td>
+            <span class="sp add">+</span>
+        </tr>
+        <tr>
+        <td>香菇牛肉</td>
+        <td>￥15</td>
+        <td>
+            <span class="sp add">+</span></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+ <div class="zdiv">
+  <em class="care">注意!!!</em>  
+  <span>请点完餐后请组长将此信息发给负责人</span><br>
+  <div class="print">
+ <!--  <table>
+     <tr>
+         <td class="test"></td>
+     </tr>
+ </table> -->
+  </div>  
+ </div>
+    <div class="copyright">@copyC307;@version1.0</div>
+</div>
+</div>
+
+   
+
+  </body>
+</html>
